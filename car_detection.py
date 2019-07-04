@@ -35,8 +35,9 @@ while True :
 
     #displaying the detection
     cv2.imshow('car_detection',frame)
-    if cv2.waitKey(33) ==27:
+    if cv2.waitKey(33) ==27: # 27 is the escape key to stop and 33 is dealy time in ms
         break
 #releasing the cap object
 cap.release()
+#performing cleanups
 cv2.destroyAllWindows()
